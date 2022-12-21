@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Submission Intermediate</string>
+    <string name="email_error">Email is not in correct format</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="password_error">Password at least 6 character</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="create_new_account">"Create New Account</string>
+    <string name="image_login">image_login</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="username">Username</string>
+    <string name="username_error">Username can\'t be empty</string>
+    <string name="signup">SignUp</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="signup_error">Sign Up Failed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Apa yang anda pikirkan?</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="error">Not Found</string>
+    <string name="logout">Logout</string>
+    <string name="picture">Picture</string>
+    <string name="main_camera">MainCamera</string>
+    <string name="story_upload">Story has been uploaded!</string>
+    <string name="add_stories">Add Stories</string>
+    <string name="error_deskripsi">Deskripsi harus diisi</string>
+    <string name="upload">Upload</string>
+    <string name="signup_success">Sign Up Success</string>
+    <string name="error_upload">Upload Failed</string>
+    <string name="retry">Retry</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps">Maps</string>
+    <string name="location_not_found">Location Not Found</string>
+</resources>

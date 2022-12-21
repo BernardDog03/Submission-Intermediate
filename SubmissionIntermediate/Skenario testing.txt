@@ -1,0 +1,87 @@
+Testing viewmodel with condition : 
+
+
+MainViewModel():
+
+1. fun 'test get token successfully and token not empty or null'()
+	- Memastikan method repo.getToken() dapat dipanggil
+	- Memastikan token tidak null
+	- Memastikan token sama dengan dummyToken
+
+2. fun 'delete token to logout'()
+	- Memastikan method repo.deleteToken() dapat dipanggil
+
+3. fun 'test get all stories successfully with token'()
+	- Memastikan method repo.getAllStories() dapat dipanggil 
+	- Memastikan data tidak kosong
+	- Memastikan jumlah data hasil pengujian telah sesuai 
+
+4. fun 'test upload file successfully with token multipart and bodyrequest'()
+	- Memastikan method repo.uploadStory() dapat dipanggil dengan token, multipart, dan juga bodyrequest.
+	- Memastikan result.isSuccess bernilai true
+	- Memastikan result.isFailure bernilai false
+	- Memastikan data pada test sama dengan data uploadResponse
+	- Memastikan data tidak null
+
+5. fun 'test upload file result failed'()
+	- Memastikan method repo.uploadStory() dapat dipanggil
+	- Memastikan result.isSuccess bernilai false
+	- Memastikan result.isFailure bernilai true
+	- Memastikan data Exception tidak null
+---------------------------------------------------------------------------------------
+
+RegisterViewModel():
+
+1. fun 'test register successfully with dumyy email and dummy password'()
+	- Memastikan method repo.register() dapat terpanggil
+	- Memastikan data tidak null
+	- Memastikan data hasil pengujian sesuai atau sama dengan data registerResponse
+	- Memastikan result.isSuccess bernilai true
+	- Memastikan result.isFailure bernilai false
+
+2. fun 'test register failed with dummy email and dummy password'()
+	- Memastikan method repo.register() dapat terpanggil
+	- Memastikan result.isFailure bernilai false
+	- Memastikan result.isSuccess bernilai true
+	- Memastikan data Exception tidak null
+---------------------------------------------------------------------------------------
+
+LoginViewModel():
+
+1. fun `test login successfully with dummy email and dummy password`()
+	- Memastikan method repo.login() dapat terpanggil
+	- Memastikan result.isSuccess bernilai true
+	- Memastikan result.isFailure bernilai false
+	- Memastikan data tidak null
+	- Memastikan data hasil pengujian sesuai atau sama dengan data loginResponse
+
+
+2. fun `test login failed with dummy email dan dummy password`()
+	- Memastikan method repo.login() dapat terpanggil
+	- Memastikan result.isSuccess bernilai false
+	- Memastikan result.isFailure bernalai true
+	- Memastikan data Exception tidak null
+
+3. fun `test save token with dummy token`()
+	- Memastikan method repo.saveToken() dapat terpanggil
+
+4. fun `test get token successfully and token not empty or null`()
+	- Memastikan method repo.getToken() dapat terpanggil 
+	- Memastikan data token tidak null
+	- Memastikan data token sama dengan dummyToken
+---------------------------------------------------------------------------------------
+
+MapsViewModel():
+
+1. fun `test get location base on story with token is successful`()
+	- Memastikan method repo.getStoriesLocation() dapat terpanggil
+	- Memastikan result.isSuccess bernilai true
+	- Memastikan result.isFailure bernilai false
+	- Memastikan data tidak null
+	- Memastikan data hasil pengujian sesuai atau sama dengan data storiesMapsResponse
+
+2. fun `test get location base on story with token is failed`()
+	- Memastikan method repo.getStoriesLocation() dapat terpanggil
+	- Memastikan result.isSuccess bernilai false
+	- Memastikan result.isFailure bernilai true
+	- Memastikan data tidak null
